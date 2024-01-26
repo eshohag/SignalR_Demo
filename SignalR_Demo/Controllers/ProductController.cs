@@ -2,7 +2,7 @@
 
 namespace SignalR_Demo.Controllers
 {
-    public class ChatHubController : Controller
+    public class ProductController : Controller
     {
         public IActionResult Index()
         {
@@ -10,4 +10,3 @@ namespace SignalR_Demo.Controllers
         }
     }
 }
-
