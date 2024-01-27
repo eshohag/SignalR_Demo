@@ -16,6 +16,7 @@ namespace SignalR_Demo
 
             builder.Services.AddControllersWithViews();
             builder.Services.AddSignalR();
+                //.AddMessagePackProtocol();
             builder.Services.AddSingleton<Dashboard_Push_Notification_Hub>();
             builder.Services.AddSingleton<Product_Push_Notification_Hub>();
             builder.Services.AddSingleton<SubscribeProductTableDependency>();

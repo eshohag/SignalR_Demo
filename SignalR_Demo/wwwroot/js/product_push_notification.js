@@ -1,6 +1,9 @@
 "use strict";
 
-var connection = new signalR.HubConnectionBuilder().withUrl("/product_push_notification_hub").build();
+var connection = new signalR.HubConnectionBuilder()
+	.withUrl("/product_push_notification_hub")
+	//.withHubProtocol(new signalR.protocols.msgpack.MessagePackHubProtocol())
+	.build();
 
 $(function () {
 	connection.start().then(function () {
